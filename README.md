@@ -1,28 +1,138 @@
-# 🏛️ Enterprise Agentic AI Hub & Template Repository
+# 🏛️ Enterprise Agentic AI Hub & Multi-Agent Architecture
 
-> **Architecture:** Production-Grade Multi-Agent AI Framework (2026)  
-> **Author:** Juan Armando Rodríguez (Applied AI & Full-Stack Systems Engineer)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Architecture](https://img.shields.io/badge/Architecture-Deterministic_Loop_Engineering-orange.svg)](#-deterministic-loop-engineering-framework)
+[![Domain Blueprints](https://img.shields.io/badge/Blueprints-4_Production_Templates-success.svg)](#-curated-modular-domain-blueprints)
+[![Safety & Compliance](https://img.shields.io/badge/Security-OWASP_MASVS_%26_AI_Safety-red.svg)](#4-04_template_ai_safety_evals)
+[![Author](https://img.shields.io/badge/Author-Juan_Armando_Rodríguez-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/juan-rodriguez-dev-ai)
 
-Este repositorio centraliza el catálogo de **Plantillas Maestras de Agentes de IA de Alto Rendimiento**, equipados con enrutamiento dinámico (*Zero-Click Dynamic Routing*), razonamiento crítico (*Doubt-Driven CoT*) y compuertas deterministas de **Loop-Engineering**.
+> **Enterprise Multi-Agent Framework (2026)**  
+> **Author:** Juan Armando Rodríguez — *Applied AI & Full-Stack Systems Engineer*  
+> **Architecture Repository:** [https://github.com/dyviarlp/agentic-ai-hub](https://github.com/dyviarlp/agentic-ai-hub)
 
 ---
 
-## 🚀 Catálogo de Plantillas de Agentes
+## 🧭 Overview
 
-| Plantilla | Especialidad & Stack | MCPs Recomendados | Skills de Élite |
+The **Enterprise Agentic AI Hub** is a curated catalog of **production-grade AI Agent Blueprints** designed for high-stakes software engineering, cloud infrastructure, career branding, and AI safety auditing. 
+
+Unlike generic prompt templates, these blueprints are engineered around **Formal State Machine Loops**, **Zero-Click Dynamic Routing**, **Doubt-Driven Chain-of-Thought (CoT)**, and **Shift-Left Automated Quality Assurance**.
+
+---
+
+## 🔄 Deterministic Loop-Engineering Framework
+
+Every agent operating within this framework executes under an immutable state machine designed to prevent infinite loops, hallucinated resolutions, and blind retry patterns.
+
+```mermaid
+flowchart TD
+    A([🎯 User Intent / Task Input]) --> B[🧠 1. THINK: Deconstruct & Doubt-Driven CoT]
+    B --> C[⚡ 2. ACT: Execute Atomic Tool / Code Action]
+    C --> D[👁️ 3. OBSERVE: Capture Runtime Output / AST / Logs]
+    D --> E[⚖️ 4. EVALUATE: Validate Against Ground Truth]
+    E -->|Validation Passed| F{🛡️ EVIDENCE GATE}
+    E -->|Validation Failed| G[🔄 MUTATE PLAN: Next attempt MUST change the hypothesis]
+    G --> B
+    F -->|Tests 100% Green & Verified| H([✅ Deliver Verified Result])
+```
+
+### ⚡ The Immutable Engineering Principle
+> **"The next attempt MUST change the plan."**  
+> If a test, build, or evaluation fails, the agent is strictly prohibited from repeating the same action or assuming transient behavior without introducing a new structural hypothesis or root-cause patch.
+
+---
+
+## 📦 Curated Modular Domain Blueprints
+
+This repository hosts 4 specialized, sanitized, privacy-clean agent templates ready for drop-in use:
+
+| Blueprint | Domain & Core Stack | Key Capabilities | Elite Skills Active |
 | :--- | :--- | :--- | :--- |
-| **01_Template_Mobile_Flutter** | Flutter 3.x, Riverpod 3.x, Android API 34-37, Firebase, Clean Architecture | firebase, github, google_maps_platform, flutter/dart | superpowers, andrej-karpathy-skills, agent-skills, impeccable, ponytail |
-| **02_Template_Web_Fullstack** | React, Next.js, Astro, Tailwind, Vercel, HTML5 Semántico, CWV | chrome-devtools, modern-web-guidance, github, visualization | react-best-practices, ui-ux-pro-max, taste-skill, chrome-devtools, gsap |
-| **03_Template_Career_HR** | Optimización ATS, Playwright PDF (build_cv.py), LinkedIn Sync, Entrevistas | github, playwright/python, web-search/url-reader | anthropic-skills, marketingskills, humanizer, cognitive-doc-design, cv-ats-optimizer |
-| **04_Template_AI_Safety_Evals** | Red-Teaming, Prompt Injections, Jailbreak Evals, Ciberseguridad OWASP MASVS | github, filesystem/search, evaluation-tools | matt-pocock-skills, red-teaming-guardrails, truthfulness-evaluator, graphify |
+| [**`01_Template_Mobile_Flutter`**](./01_Template_Mobile_Flutter) | Flutter 3.5+, Riverpod 3.x, Android API 34–37, Firebase | Clean Architecture, In-Memory Safe Storage, 120fps Impeller, Shift-Left QA (100% test pass) | `superpowers`, `andrej-karpathy-skills`, `agent-skills`, `impeccable`, `ponytail` |
+| [**`02_Template_Web_Fullstack`**](./02_Template_Web_Fullstack) | Next.js, React, TypeScript, Astro, Vercel Serverless | Author-Grade UI/UX, Core Web Vitals (LCP < 2s, INP < 200ms), WCAG AA a11y, strict TS contracts | `react-best-practices`, `ui-ux-pro-max`, `taste-skill`, `modern-web-guidance`, `chrome-devtools` |
+| [**`03_Template_Career_HR`**](./03_Template_Career_HR) | Playwright Headless PDF, ATS Parser, Python, LinkedIn Sync | Deterministic 2-page A4 PDF rendering, strict NDA compliance, 360° Profile Synchronization | `anthropic-skills`, `marketingskills`, `humanizer`, `cognitive-doc-design`, `cv-ats-optimizer` |
+| [**`04_Template_AI_Safety_Evals`**](./04_Template_AI_Safety_Evals) | Python Evals, Prompt Injection Testing, OWASP MASVS | Red-teaming batteries, jailbreak probing, anti-hallucination auditing, granular Firestore/CORS security | `matt-pocock-skills`, `red-teaming-guardrails`, `truthfulness-evaluator`, `security-and-hardening` |
 
 ---
 
-## 🛠️ Cómo Utilizar una Plantilla en un Proyecto Nuevo
+## 📂 Repository Structure
 
-1. Copia la carpeta de la plantilla deseada a la raíz de tu nuevo proyecto:
-   - Ejemplo para Flutter:
-     `cp -r 01_Template_Mobile_Flutter/.agents /ruta/a/tu/nuevo-proyecto/`
-   - Ejemplo para Web Fullstack:
-     `cp -r 02_Template_Web_Fullstack/.agents /ruta/a/tu/nuevo-proyecto/`
-2. El entorno agéntico (Antigravity IDE / Gemini) detectará automáticamente el archivo `.agents/AGENTS.md` y adoptará la especialidad con cero fricción.
+```text
+agentic-ai-hub/
+├── 01_Template_Mobile_Flutter/
+│   ├── .agents/
+│   │   └── AGENTS.md                  # Mobile Flutter agent instructions & constraints
+│   └── README.md                      # Architecture deep dive & Flutter QA blueprint
+│
+├── 02_Template_Web_Fullstack/
+│   ├── .agents/
+│   │   └── AGENTS.md                  # Fullstack Web agent rules & Web Vitals directives
+│   └── README.md                      # Next.js/React & Serverless guidelines
+│
+├── 03_Template_Career_HR/
+│   ├── .agents/
+│   │   └── AGENTS.md                  # Tech recruiter & career strategy agent instructions
+│   └── README.md                      # Headless Playwright PDF & ATS optimization manual
+│
+├── 04_Template_AI_Safety_Evals/
+│   ├── .agents/
+│   │   └── AGENTS.md                  # AI safety, red teaming & security audit directives
+│   └── README.md                      # Guardrail evaluation & MASVS compliance guide
+│
+├── .gitignore
+├── LICENSE
+└── README.md                          # Master Hub Documentation (This file)
+```
+
+---
+
+## 🚀 Quickstart: Integrating Blueprints into Your Project
+
+Adopting any blueprint in your target project takes **one command**. The agentic IDE (Antigravity IDE, Claude Code, Cursor, Windsurf, Gemini CLI, Cline) will immediately discover `.agents/AGENTS.md` at the workspace root:
+
+### 1. Flutter Mobile Project
+```bash
+cp -r 01_Template_Mobile_Flutter/.agents /path/to/your-flutter-project/
+```
+
+### 2. Web Fullstack Project
+```bash
+cp -r 02_Template_Web_Fullstack/.agents /path/to/your-web-project/
+```
+
+### 3. Career & Document Strategy
+```bash
+cp -r 03_Template_Career_HR/.agents /path/to/your-career-workspace/
+```
+
+### 4. AI Safety & Security Evals
+```bash
+cp -r 04_Template_AI_Safety_Evals/.agents /path/to/your-audit-workspace/
+```
+
+---
+
+## 🛡️ Privacy, Zero-Leakage & Safety Guarantee
+
+All templates in this hub are **100% sanitized and virgin**:
+- ❌ **Zero Hardcoded Secrets / API Keys:** All environments require dynamic `.env` configuration.
+- ❌ **Zero Private Telemetry:** No personal identifiable information (PII) or confidential client data.
+- ✅ **Strict NDA Compliance:** Frameworks focus strictly on engineering architecture and public evaluation standards.
+
+---
+
+## 👤 Author & Connect
+
+**Juan Armando Rodríguez**  
+*Applied AI & Full-Stack Systems Engineer*  
+*Specialized in Fault-Tolerant Mobile/Web Platforms, Agentic AI Systems & Algorithmic Safety.*
+
+- 💼 **LinkedIn:** [linkedin.com/in/juan-rodriguez-dev-ai](https://www.linkedin.com/in/juan-rodriguez-dev-ai)
+- 🌐 **Live Production Showcase:** [mascotia-demo.web.app](https://mascotia-demo.web.app)
+- 🐙 **GitHub Profile:** [github.com/dyviarlp](https://github.com/dyviarlp)
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE) — feel free to use and adapt it for personal or commercial agentic systems.

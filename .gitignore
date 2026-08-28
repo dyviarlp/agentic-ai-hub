@@ -1,0 +1,48 @@
+# Environments & Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.secret
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs & Temporary Files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Node / Web Build
+node_modules/
+dist/
+build/
+.next/
+out/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+ENV/
+
+# Flutter / Dart Build
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
