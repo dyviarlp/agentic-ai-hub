@@ -2,6 +2,7 @@
 
 > **Specialty:** Senior Tech Recruiter & Career Systems Architect  
 > **Engine:** Headless Playwright PDF Compiler (Single Source of Truth)  
+> **Native MCPs:** `playwright/python`, `web-search/url-reader`, `github`  
 > **Paradigm:** ATS Optimization, 2-Page Hard Constraint & Strict NDA Compliance
 
 ---

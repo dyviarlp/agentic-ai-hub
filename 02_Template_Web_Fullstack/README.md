@@ -2,6 +2,7 @@
 
 > **Specialty:** Lead Fullstack Web Engineer & UI/UX Pro Architect  
 > **Stack:** Next.js, React 19, TypeScript, Astro, Vercel Serverless  
+> **Native MCPs:** `chrome-devtools`, `modern-web-guidance`, `visualization`, `github`  
 > **Paradigm:** Author-Grade UI/UX, Extreme Web Vitals & Strict Type Contracts
 
 ---

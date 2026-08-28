@@ -3,6 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Architecture](https://img.shields.io/badge/Architecture-Deterministic_Loop_Engineering-orange.svg)](#-deterministic-loop-engineering-framework)
 [![Domain Blueprints](https://img.shields.io/badge/Blueprints-4_Production_Templates-success.svg)](#-curated-modular-domain-blueprints)
+[![MCP Protocol](https://img.shields.io/badge/MCP-Model_Context_Protocol_Ready-8A2BE2.svg)](#-curated-modular-domain-blueprints)
 [![Safety & Compliance](https://img.shields.io/badge/Security-OWASP_MASVS_%26_AI_Safety-red.svg)](#4-04_template_ai_safety_evals)
 [![Author](https://img.shields.io/badge/Author-Juan_Armando_Rodríguez-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/juan-rodriguez-dev-ai)
 
@@ -16,7 +17,7 @@
 
 The **Enterprise Agentic AI Hub** is a curated catalog of **production-grade AI Agent Blueprints** designed for high-stakes software engineering, cloud infrastructure, career branding, and AI safety auditing. 
 
-Unlike generic prompt templates, these blueprints are engineered around **Formal State Machine Loops**, **Zero-Click Dynamic Routing**, **Doubt-Driven Chain-of-Thought (CoT)**, and **Shift-Left Automated Quality Assurance**.
+Unlike generic prompt templates, these blueprints are engineered around **Formal State Machine Loops**, **Native MCP (Model Context Protocol) Integration**, **Zero-Click Dynamic Intent Routing**, **Doubt-Driven Chain-of-Thought (CoT)**, and **Shift-Left Automated Quality Assurance**.
 
 ---
 
@@ -27,7 +28,7 @@ Every agent operating within this framework executes under an immutable state ma
 ```mermaid
 flowchart TD
     A([🎯 User Intent / Task Input]) --> B[🧠 1. THINK: Deconstruct & Doubt-Driven CoT]
-    B --> C[⚡ 2. ACT: Execute Atomic Tool / Code Action]
+    B --> C[⚡ 2. ACT: Execute Atomic MCP Tool / Code Action]
     C --> D[👁️ 3. OBSERVE: Capture Runtime Output / AST / Logs]
     D --> E[⚖️ 4. EVALUATE: Validate Against Ground Truth]
     E -->|Validation Passed| F{🛡️ EVIDENCE GATE}
@@ -46,12 +47,12 @@ flowchart TD
 
 This repository hosts 4 specialized, sanitized, privacy-clean agent templates ready for drop-in use:
 
-| Blueprint | Domain & Core Stack | Key Capabilities | Elite Skills Active |
-| :--- | :--- | :--- | :--- |
-| [**`01_Template_Mobile_Flutter`**](./01_Template_Mobile_Flutter) | Flutter 3.5+, Riverpod 3.x, Android API 34–37, Firebase | Clean Architecture, In-Memory Safe Storage, 120fps Impeller, Shift-Left QA (100% test pass) | `superpowers`, `andrej-karpathy-skills`, `agent-skills`, `impeccable`, `ponytail` |
-| [**`02_Template_Web_Fullstack`**](./02_Template_Web_Fullstack) | Next.js, React, TypeScript, Astro, Vercel Serverless | Author-Grade UI/UX, Core Web Vitals (LCP < 2s, INP < 200ms), WCAG AA a11y, strict TS contracts | `react-best-practices`, `ui-ux-pro-max`, `taste-skill`, `modern-web-guidance`, `chrome-devtools` |
-| [**`03_Template_Career_HR`**](./03_Template_Career_HR) | Playwright Headless PDF, ATS Parser, Python, LinkedIn Sync | Deterministic 2-page A4 PDF rendering, strict NDA compliance, 360° Profile Synchronization | `anthropic-skills`, `marketingskills`, `humanizer`, `cognitive-doc-design`, `cv-ats-optimizer` |
-| [**`04_Template_AI_Safety_Evals`**](./04_Template_AI_Safety_Evals) | Python Evals, Prompt Injection Testing, OWASP MASVS | Red-teaming batteries, jailbreak probing, anti-hallucination auditing, granular Firestore/CORS security | `matt-pocock-skills`, `red-teaming-guardrails`, `truthfulness-evaluator`, `security-and-hardening` |
+| Blueprint | Domain & Core Stack | Native MCP Servers | Elite Skills Active | Key Capabilities |
+| :--- | :--- | :--- | :--- | :--- |
+| [**`01_Template_Mobile_Flutter`**](./01_Template_Mobile_Flutter) | Flutter 3.5+, Riverpod 3.x, Android API 34–37, Firebase | `firebase`, `google_maps_platform`, `flutter/dart`, `github` | `superpowers`, `andrej-karpathy-skills`, `agent-skills`, `impeccable`, `ponytail` | Clean Architecture, In-Memory Safe Storage, 120fps Impeller, Shift-Left QA (100% test pass) |
+| [**`02_Template_Web_Fullstack`**](./02_Template_Web_Fullstack) | Next.js, React, TypeScript, Astro, Vercel Serverless | `chrome-devtools`, `modern-web-guidance`, `visualization`, `github` | `react-best-practices`, `ui-ux-pro-max`, `taste-skill`, `modern-web-guidance`, `chrome-devtools` | Author-Grade UI/UX, Core Web Vitals (LCP < 2s, INP < 200ms), WCAG AA a11y, strict TS contracts |
+| [**`03_Template_Career_HR`**](./03_Template_Career_HR) | Playwright Headless PDF, ATS Parser, Python, LinkedIn Sync | `playwright/python`, `web-search/url-reader`, `github` | `anthropic-skills`, `marketingskills`, `humanizer`, `cognitive-doc-design`, `cv-ats-optimizer` | Deterministic 2-page A4 PDF rendering, strict NDA compliance, 360° Profile Synchronization |
+| [**`04_Template_AI_Safety_Evals`**](./04_Template_AI_Safety_Evals) | Python Evals, Prompt Injection Testing, OWASP MASVS | `filesystem/search`, `evaluation-tools`, `github` | `matt-pocock-skills`, `red-teaming-guardrails`, `truthfulness-evaluator`, `security-and-hardening` | Red-teaming batteries, jailbreak probing, anti-hallucination auditing, granular Firestore/CORS security |
 
 ---
 

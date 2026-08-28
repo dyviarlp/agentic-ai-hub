@@ -3,6 +3,7 @@
 > **Specialty:** Lead Mobile Engineer & Flutter Architect  
 > **Target OS:** Android API 34–37 (Android 15/16/17 Ready), iOS 17+  
 > **State Engine:** Riverpod 3.x (`Notifier` / `AsyncNotifier`)  
+> **Native MCPs:** `firebase`, `google_maps_platform`, `flutter/dart`, `github`  
 > **Paradigm:** Clean Architecture, In-Memory Safe Storage & Shift-Left QA
 
 ---
