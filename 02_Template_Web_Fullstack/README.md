@@ -1,6 +1,7 @@
 # 🌐 Template 02: Web Fullstack & Cloud Engineering (2026)
 
 > **Specialty:** Lead Fullstack Web Engineer & UI/UX Pro Architect  
+> **Author:** Juan Armando Rodríguez Pérez  
 > **Stack:** Next.js, React 19, TypeScript, Astro, Vercel Serverless  
 > **Native MCPs:** `chrome-devtools`, `modern-web-guidance`, `visualization`, `github`  
 > **Paradigm:** Author-Grade UI/UX, Extreme Web Vitals & Strict Type Contracts

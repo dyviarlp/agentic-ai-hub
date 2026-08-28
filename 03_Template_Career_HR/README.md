@@ -1,6 +1,7 @@
 # 💼 Template 03: Career Strategist & ATS Optimization (2026)
 
 > **Specialty:** Senior Tech Recruiter & Career Systems Architect  
+> **Author:** Juan Armando Rodríguez Pérez  
 > **Engine:** Headless Playwright PDF Compiler (Single Source of Truth)  
 > **Native MCPs:** `playwright/python`, `web-search/url-reader`, `github`  
 > **Paradigm:** ATS Optimization, 2-Page Hard Constraint & Strict NDA Compliance

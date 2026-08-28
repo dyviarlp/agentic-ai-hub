@@ -1,6 +1,7 @@
 # 🛡️ Template 04: AI Safety Evals & Security Auditor (2026)
 
 > **Specialty:** Lead AI Safety Evaluator & Red Team Security Specialist  
+> **Author:** Juan Armando Rodríguez Pérez  
 > **Auditing Scope:** Prompt Injections, LLM Jailbreaks, OWASP MASVS & Firebase Security Rules  
 > **Native MCPs:** `filesystem/search`, `evaluation-tools`, `github`  
 > **Paradigm:** Doubt-Driven CoT, Factual Consistency & Quantifiable Evidence Gates

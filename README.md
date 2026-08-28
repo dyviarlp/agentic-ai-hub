@@ -5,10 +5,10 @@
 [![Domain Blueprints](https://img.shields.io/badge/Blueprints-4_Production_Templates-success.svg)](#-curated-modular-domain-blueprints)
 [![MCP Protocol](https://img.shields.io/badge/MCP-Model_Context_Protocol_Ready-8A2BE2.svg)](#-curated-modular-domain-blueprints)
 [![Safety & Compliance](https://img.shields.io/badge/Security-OWASP_MASVS_%26_AI_Safety-red.svg)](#4-04_template_ai_safety_evals)
-[![Author](https://img.shields.io/badge/Author-Juan_Armando_Rodríguez-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/juan-rodriguez-dev-ai)
+[![Author](https://img.shields.io/badge/Author-Juan_Armando_Rodríguez_Pérez-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/juan-rodriguez-dev-ai)
 
 > **Enterprise Multi-Agent Framework (2026)**  
-> **Author:** Juan Armando Rodríguez — *Applied AI & Full-Stack Systems Engineer*  
+> **Author:** Juan Armando Rodríguez Pérez — *Applied AI & Full-Stack Systems Engineer*  
 > **Architecture Repository:** [https://github.com/dyviarlp/agentic-ai-hub](https://github.com/dyviarlp/agentic-ai-hub)
 
 ---
@@ -124,7 +124,7 @@ All templates in this hub are **100% sanitized and virgin**:
 
 ## 👤 Author & Connect
 
-**Juan Armando Rodríguez**  
+**Juan Armando Rodríguez Pérez**  
 *Applied AI & Full-Stack Systems Engineer*  
 *Specialized in Fault-Tolerant Mobile/Web Platforms, Agentic AI Systems & Algorithmic Safety.*
 
@@ -136,4 +136,4 @@ All templates in this hub are **100% sanitized and virgin**:
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE) — feel free to use and adapt it for personal or commercial agentic systems.
+This project is licensed under the [MIT License](LICENSE) — feel free to use and adapt it for personal or commercial agentic systems with attribution.

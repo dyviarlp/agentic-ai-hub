@@ -1,6 +1,7 @@
 # 📱 Template 01: Mobile Flutter Full-Stack (2026)
 
 > **Specialty:** Lead Mobile Engineer & Flutter Architect  
+> **Author:** Juan Armando Rodríguez Pérez  
 > **Target OS:** Android API 34–37 (Android 15/16/17 Ready), iOS 17+  
 > **State Engine:** Riverpod 3.x (`Notifier` / `AsyncNotifier`)  
 > **Native MCPs:** `firebase`, `google_maps_platform`, `flutter/dart`, `github`  
