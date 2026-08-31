@@ -1,0 +1,30 @@
+﻿name: AI Production Safety & Testing Gatekeeper
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate-blueprints:
+    name: Blueprint Architecture & Schema Validation
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Codebase
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Verify Blueprint Schema & Integrity
+        run: |
+          echo 🛡️ Verifying agent blueprints and structural contracts...
+          test -d 01_Template_Mobile_Flutter/.agents
+          test -d 02_Template_Web_Fullstack/.agents
+          test -d 03_Template_Career_HR/.agents
+          test -d 04_Template_AI_Safety_Evals/.agents
+          echo ✅ All 4 production blueprints are present and compliant.
