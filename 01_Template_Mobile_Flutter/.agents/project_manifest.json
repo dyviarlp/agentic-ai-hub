@@ -20,5 +20,15 @@
     "zero_warnings": true,
     "dynamic_test_discovery": true,
     "max_rag_domain_files_per_session": 3
+  },
+  "mcp_servers": {
+    "required": [
+      "flutter",
+      "firebase",
+      "google_maps_platform",
+      "github"
+    ],
+    "config_file": ".agents/mcp_config.json",
+    "security_protocol": ".agents/MCP_SECURITY.md"
   }
 }
