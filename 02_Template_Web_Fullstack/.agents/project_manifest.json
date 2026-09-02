@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "project_name": "TemplateWebFullstack",
+  "stack": "web-fullstack-cloud",
+  "frameworks": [
+    "nextjs",
+    "react",
+    "astro",
+    "tailwind",
+    "vercel"
+  ],
+  "agent_runtime": "antigravity",
+  "commands": {
+    "test_runner": "npm test",
+    "linter": "npm run lint",
+    "health_check": "npm run check",
+    "build_command": "npm run build",
+    "dev_server": "npm run dev"
+  },
+  "domains": {
+    "core_web_vitals": ".agents/memory/01_core_web_vitals_perf.md",
+    "ui_ux_design_system": ".agents/memory/02_ui_ux_design_system.md",
+    "typescript_api_contracts": ".agents/memory/03_typescript_api_contracts.md",
+    "seo_meta_a11y": ".agents/memory/04_seo_meta_a11y.md",
+    "deployment_vercel": ".agents/memory/05_deployment_ci_cd.md"
+  },
+  "invariants": {
+    "zero_warnings": true,
+    "strict_typescript": true,
+    "max_rag_domain_files_per_session": 3,
+    "lcp_target_ms": 2000,
+    "inp_target_ms": 200,
+    "cls_target": 0.1
+  }
+}

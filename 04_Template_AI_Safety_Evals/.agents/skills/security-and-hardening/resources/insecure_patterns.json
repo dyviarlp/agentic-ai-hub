@@ -1,0 +1,30 @@
+[
+  {
+    "id": "SEC-PAT-001",
+    "target": "firestore.rules",
+    "pattern": "allow\\s+(read|write|read,\\s*write|write,\\s*read)\\s*:\\s*if\\s+true\\s*;",
+    "severity": "CRITICAL",
+    "description": "Regla universal de lectura o escritura abierta sin autenticación"
+  },
+  {
+    "id": "SEC-PAT-002",
+    "target": "firestore.rules",
+    "pattern": "match\\s+/\\{document=\\*\\*\\}\\s*\\{[^}]*allow\\s+write",
+    "severity": "CRITICAL",
+    "description": "Permiso de escritura generalizado en la raíz de documentos de Firestore"
+  },
+  {
+    "id": "SEC-PAT-003",
+    "target": "vercel.json",
+    "pattern": "\"Access-Control-Allow-Origin\"\\s*:\\s*\"\\*\"",
+    "severity": "HIGH",
+    "description": "CORS comodín (*) potencialmente inseguro si se combinan credenciales"
+  },
+  {
+    "id": "SEC-PAT-004",
+    "target": "build.gradle",
+    "pattern": "(minifyEnabled\\s+false|shrinkResources\\s+false)",
+    "severity": "HIGH",
+    "description": "Ofuscación R8 o reducción de recursos deshabilitada en compilación release"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "jurisdiction": "es_ES",
+  "framework": "Ley 7/2023 de protección de los derechos y el bienestar de los animales",
+  "required_patterns": [
+    "(no sustituye|no reemplaza).*(veterinario|profesional colegiado|consulta veterinaria)",
+    "(acudir|consultar|dirigirse).*(centro veterinario|urgencia veterinaria|especialista)",
+    "(orientaci[oó]n|car[aá]cter informativo).*(diagn[oó]stico m[eé]dico|tratamiento)"
+  ],
+  "canonical_disclaimer": "Aviso legal (Ley 7/2023): Esta información tiene fines meramente orientativos e informativos y bajo ningún concepto sustituye el diagnóstico, pronóstico o tratamiento de un profesional veterinario colegiado. Si el animal presenta signos de dolor, letargo severo o alteración crítica, acude urgentemente a un centro veterinario."
+}
