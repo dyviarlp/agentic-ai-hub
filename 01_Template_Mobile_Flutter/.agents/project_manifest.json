@@ -1,0 +1,24 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "project_name": "MyMobileApp",
+  "stack": "flutter-mobile",
+  "agent_runtime": "antigravity",
+  "commands": {
+    "test_runner": "flutter test",
+    "linter": "flutter analyze",
+    "health_check": "flutter analyze && flutter test",
+    "build_release": "flutter build appbundle --release --obfuscate --split-debug-info=build/app/outputs/symbols"
+  },
+  "domains": {
+    "core_logic": ".agents/memory/01_core_logic.md",
+    "ui_components": ".agents/memory/02_ui_components.md",
+    "state_providers": ".agents/memory/03_state_providers.md",
+    "data_storage": ".agents/memory/04_data_storage.md",
+    "governance_evidence": ".agents/memory/05_governance_evidence.md"
+  },
+  "invariants": {
+    "zero_warnings": true,
+    "dynamic_test_discovery": true,
+    "max_rag_domain_files_per_session": 3
+  }
+}
