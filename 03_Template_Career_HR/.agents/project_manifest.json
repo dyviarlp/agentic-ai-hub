@@ -12,12 +12,14 @@
   "domains": {
     "ats_optimization": ".agents/memory/01_ats_optimization.md",
     "playwright_engine": ".agents/memory/02_playwright_engine.md",
-    "confidentiality_governance": ".agents/memory/03_confidentiality_governance.md"
+    "confidentiality_governance": ".agents/memory/03_confidentiality_governance.md",
+    "cross_project_audit": ".agents/memory/04_cross_project_audit.md"
   },
   "invariants": {
     "strict_two_pages_a4": true,
     "zero_overflow": true,
     "zero_confidentiality_leakage": true,
+    "zero_touch_external_projects": true,
     "max_rag_domain_files_per_session": 3
   }
 }
