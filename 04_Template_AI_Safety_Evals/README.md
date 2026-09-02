@@ -22,9 +22,31 @@
 
 ---
 
+## 📦 Directory Structure
+
+```text
+04_Template_AI_Safety_Evals/
+├── .agents/
+│   ├── memory/
+│   │   ├── 01_vulnerabilities_registry.md
+│   │   ├── 02_mitigations_playbook.md
+│   │   ├── 03_llm_evals_benchmarks.md
+│   │   ├── 04_cloud_rules_hardening.md
+│   │   └── 05_masvs_mobile_security.md
+│   ├── skills/
+│   │   ├── red-teaming-guardrails/
+│   │   ├── security-and-hardening/
+│   │   └── truthfulness-evaluator/
+│   ├── AGENTS.md
+│   └── project_manifest.json
+└── README.md
+```
+
+---
+
 ## 🚀 Drop-In Activation
 
 To activate this agent template in any AI/security audit repository:
 ```bash
-cp -r .agents /path/to/your-audit-project/
+cp -r 04_Template_AI_Safety_Evals/.agents /path/to/your-audit-project/
 ```

@@ -31,7 +31,8 @@
 │   ├── memory/
 │   │   ├── 01_ats_optimization.md
 │   │   ├── 02_playwright_engine.md
-│   │   └── 03_confidentiality_governance.md
+│   │   ├── 03_confidentiality_governance.md
+│   │   └── 04_cross_project_audit.md
 │   ├── skills/
 │   │   ├── anthropic-skills/
 │   │   ├── cv-ats-optimizer/

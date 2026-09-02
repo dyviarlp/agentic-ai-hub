@@ -22,9 +22,35 @@
 
 ---
 
+## 📦 Directory Structure
+
+```text
+02_Template_Web_Fullstack/
+├── .agents/
+│   ├── memory/
+│   │   ├── 01_core_web_vitals_perf.md
+│   │   ├── 02_ui_ux_design_system.md
+│   │   ├── 03_typescript_api_contracts.md
+│   │   ├── 04_seo_meta_a11y.md
+│   │   └── 05_deployment_ci_cd.md
+│   ├── skills/
+│   │   ├── chrome-devtools/
+│   │   ├── gsap-motion/
+│   │   ├── modern-web-guidance/
+│   │   ├── react-best-practices/
+│   │   ├── taste-skill/
+│   │   ├── typescript-safety/
+│   │   └── ui-ux-pro-max/
+│   ├── AGENTS.md
+│   └── project_manifest.json
+└── README.md
+```
+
+---
+
 ## 🚀 Drop-In Activation
 
 To activate this agent template in any Web repository:
 ```bash
-cp -r .agents /path/to/your-web-project/
+cp -r 02_Template_Web_Fullstack/.agents /path/to/your-web-project/
 ```
