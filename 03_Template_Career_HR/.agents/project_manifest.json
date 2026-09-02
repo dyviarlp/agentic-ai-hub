@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "project_name": "CareerEngineHR",
+  "stack": "career-strategy-playwright",
+  "agent_runtime": "antigravity",
+  "commands": {
+    "test_runner": "python -c \"import fitz, glob; pdfs = glob.glob('*.pdf'); assert all(len(fitz.open(p)) == 2 for p in pdfs), 'PDF page count != 2'\"",
+    "linter": "flake8 --max-line-length=120",
+    "health_check": "python Scripts_Generadores/build_cv.py",
+    "build_release": "python Scripts_Generadores/build_cv.py && python Scripts_Generadores/build_cv_ats.py"
+  },
+  "domains": {
+    "ats_optimization": ".agents/memory/01_ats_optimization.md",
+    "playwright_engine": ".agents/memory/02_playwright_engine.md",
+    "confidentiality_governance": ".agents/memory/03_confidentiality_governance.md"
+  },
+  "invariants": {
+    "strict_two_pages_a4": true,
+    "zero_overflow": true,
+    "zero_confidentiality_leakage": true,
+    "max_rag_domain_files_per_session": 3
+  }
+}
