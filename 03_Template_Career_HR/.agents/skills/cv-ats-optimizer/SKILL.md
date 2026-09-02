@@ -27,4 +27,4 @@ Esta skill garantiza que los CVs generados por código cumplan simultáneamente 
    - Sin tablas complejas de maquetación que distorsionen el orden de lectura en formato ATS puro.
 3. **Compliance Estricto de Confidencialidad (NDA):**
    - Prohibido incluir nombres de clientes protegidos o herramientas propietarias internas de clientes en repositorios públicos o CVs.
-   - Representar la experiencia a través del rol profesional (*AI QA & Algorithmic Safety Specialist*) y métricas genéricas (*29+ pipelines avalados, 100% de calidad*).
+   - Representar la experiencia a través de roles profesionales estandarizados (ej. *Systems Engineer*, *AI QA Architect*) y métricas objetivas (ej. *disponibilidad 99.9%*, *suites de tests automatizadas*).

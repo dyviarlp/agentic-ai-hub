@@ -11,7 +11,7 @@ Esta skill estructura la propuesta de valor técnica de perfiles de ingeniería 
 ## 1. El Gancho del "Non-Traditional Builder"
 
 Transforma el trasfondo operativo crítico en una ventaja competitiva decisiva:
-- **Eje Narrativo:** De operaciones de alta presión en entornos críticos sanitarios (tolerancia cero al error, cumplimiento estricto de protocolos) a la arquitectura de software tolerante a fallos, pipelines deterministas y shift-left testing.
+- **Eje Narrativo:** De operaciones de alta presión en entornos críticos (tolerancia cero al error, cumplimiento estricto de protocolos) a la arquitectura de software tolerante a fallos, pipelines deterministas y shift-left testing.
 - **Diferencial:** No solo sabe escribir código; entiende el impacto de las caídas de servicio y diseña sistemas resilientes por diseño.
 
 ## 2. Framework de Escaneo de 6 Segundos
@@ -26,5 +26,5 @@ Transforma el trasfondo operativo crítico en una ventaja competitiva decisiva:
 ## 3. Optimización de Ratio de Conversión (CRO) para Reclutadores
 
 - **Minimizar la Fricción de Contacto:** Enlaces directos y clicables al simulador web, perfil de GitHub y LinkedIn.
-- **Pruebas Sociales Cuantificables:** Superación de filtros de Google Play (14 días con 20 testers), 108 tests automatizados, 29+ pipelines de IA auditados al 100% de calidad.
-- **Llamadas a la Acción Nítidas:** Enfoque orientado a agendar entrevistas técnicas para roles de *Applied AI & Full-Stack Systems Engineer*.
+- **Pruebas Sociales Cuantificables:** Tracción verificable: releases en tiendas oficiales, cobertura de suites automatizadas > 90%, auditorías de calidad superadas.
+- **Llamadas a la Acción Nítidas:** Enfoque orientado a agendar entrevistas técnicas para roles técnicos y de liderazgo de ingeniería objetivo.

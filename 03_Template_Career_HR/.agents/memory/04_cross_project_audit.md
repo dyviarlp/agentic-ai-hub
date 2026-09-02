@@ -8,8 +8,8 @@
 ## 1. El Principio de Lectura Inteligente (Smart Read-Only)
 
 El agente de perfiles profesionales y estrategia de carrera actúa como un **auditor técnico pasivo**:
-- **Misión:** Rastrear, extraer e interpretar evidencias reales de ingeniería y producción directamente desde los repositorios de proyectos adyacentes (`../MascotIA`, `../Agent Hub & Template Repository`, u otros proyectos futuros).
-- **Invariante Absoluta (Zero-Touch):** **PROHIBIDO MODIFICAR O ESCRIBIR CÓDIGO EXTERNO.** Toda interacción con proyectos fuera de `PERFILES PROFESIONALES (CV)` se realiza con herramientas exclusivas de inspección (`view_file`, `grep_search`, `list_dir`). Jamás ejecutar comandos destructivos, linters de escritura o herramientas de edición sobre repositorios de desarrollo.
+- **Misión:** Rastrear, extraer e interpretar evidencias reales de ingeniería y producción directamente desde los repositorios de proyectos adyacentes (`../mobile-app`, `../backend-api`, u otros proyectos de desarrollo).
+- **Invariante Absoluta (Zero-Touch):** **PROHIBIDO MODIFICAR O ESCRIBIR CÓDIGO EXTERNO.** Toda interacción con proyectos fuera del repositorio de perfiles/carrera se realiza con herramientas exclusivas de inspección (`view_file`, `grep_search`, `list_dir`). Jamás ejecutar comandos destructivos, linters de escritura o herramientas de edición sobre repositorios de desarrollo.
 
 ---
 
@@ -31,7 +31,7 @@ Para descubrir nuevos hitos sin intervención manual, el agente debe auditar los
 
 $$\text{Evidencia Técnica en Repositorio} \xrightarrow{\text{Lectura Inteligente}} \text{Métrica Cuantificable} \xrightarrow{\text{Humanizer}} \text{Bala de Alto Impacto (CV / LinkedIn)}$$
 
-1. **Identificar:** Leer el artefacto de origen (ej. `RELEASE_NOTES_v1.0.0.md` en MascotIA).
+1. **Identificar:** Leer el artefacto de origen (ej. `RELEASE_NOTES_v1.0.0.md`, `CHANGELOG.md` o `pubspec.yaml` del proyecto).
 2. **Contextualizar:** Extraer números, causas de fallos resueltos y decisiones de arquitectura.
 3. **Traducir:** Convertir la evidencia en propuesta de valor para reclutadores técnicos (ej. *"Resolución de crash nativo en Android 14–17 mediante ingeniería forense en bytecode JVM"*).
 4. **Sincronizar:** Replicar en PDF (ES/EN), LinkedIn, GitHub y Chuleta sin tocar una sola coma del código original del proyecto.

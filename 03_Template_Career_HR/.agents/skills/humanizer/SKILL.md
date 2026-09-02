@@ -14,7 +14,7 @@ El agente tiene estrictamente prohibido utilizar:
 - **Vocabulario inflado:** *delve, testament, pivotal, plethora, beacon, landscape, tapestry, spearhead, meticulously, fostering, seamless*.
 - **Construcciones de trascendencia vacía:** *"En un mundo cada vez más digital...", "Demostrando mi pasión por...", "Un testimonio de mi compromiso..."*.
 - **Abuso de guiones largos (em-dashes):** Evitar el uso recurrente de `—` como recurso estilístico forzado; preferir comas, puntos o paréntesis naturales.
-- **Adjetivación grandilocuente:** Sustituir "solución revolucionaria / vanguardista" por métricas empíricas ("latencia sub-1.1s", "108 tests con 100% pass rate").
+- **Adjetivación grandilocuente:** Sustituir "solución revolucionaria / vanguardista" por métricas empíricas ("latencia sub-1.1s", "cobertura > 90% con suites de tests").
 
 ## 2. Principios de Redacción de Ingeniería (Voice & Tone)
 
