@@ -5,7 +5,7 @@
 [![Ecosystem Audit](https://img.shields.io/badge/Ecosystem_Audit-100%25_Enterprise_Gold-brightgreen.svg)](#-enterprise-gold-audit-certification-100100)
 [![RAG Memory](https://img.shields.io/badge/RAG_Memory-48_Domains_Active-blue.svg)](#-curated-modular-domain-blueprints)
 [![Physical Skills](https://img.shields.io/badge/Executable_Skills-17_Physical_Skills-8A2BE2.svg)](#-curated-modular-domain-blueprints)
-[![MCP Protocol](https://img.shields.io/badge/MCP-Model_Context_Protocol_Ready-blueviolet.svg)](#-curated-modular-domain-blueprints)
+[![MCP Protocol](https://img.shields.io/badge/MCP-Model_Context_Protocol_Ready-blueviolet.svg)](#-enterprise-mcp-protocol--security-governance)
 [![Safety & Compliance](https://img.shields.io/badge/Security-OWASP_MASVS_%26_Zero_Secrets-red.svg)](#-privacy-zero-leakage--safety-guarantee)
 [![Author](https://img.shields.io/badge/Author-Juan_Armando_Rodríguez_Pérez-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/juan-rodriguez-dev-ai)
 
@@ -62,10 +62,34 @@ This repository hosts 4 specialized, sanitized, privacy-clean agent templates re
 
 | Blueprint | Domain & Core Stack | Native MCP Servers | Elite Physical Skills Active | Key Capabilities |
 | :--- | :--- | :--- | :--- | :--- |
-| [**`01_Template_Mobile_Flutter`**](./01_Template_Mobile_Flutter) | Flutter 3.5+, Riverpod 3.x, Android API 34–37, Firebase | `firebase`, `google_maps_platform`, `flutter/dart`, `github` | `pocock-safety`, `ponytail`, `karpathy-discipline` | Decoupled Manifest (`project_manifest.json`), 5 RAG Memory Domains, Reactive 360° Loop, Clean Architecture |
-| [**`02_Template_Web_Fullstack`**](./02_Template_Web_Fullstack) | Next.js, React 19, TypeScript, Astro, Vercel Serverless | `chrome-devtools`, `modern-web-guidance`, `visualization`, `github` | `chrome-devtools`, `gsap-motion`, `modern-web-guidance`, `react-best-practices`, `taste-skill`, `typescript-safety`, `ui-ux-pro-max` | Author-Grade UI/UX, 5 RAG Memory Domains, Core Web Vitals (LCP < 2s, INP < 200ms), WCAG AA a11y, Strict TS API Contracts |
-| [**`03_Template_Career_HR`**](./03_Template_Career_HR) | Playwright Headless PDF, ATS Parser, Python, LinkedIn Sync | `playwright/python`, `web-search/url-reader`, `github` | `anthropic-skills`, `cv-ats-optimizer`, `humanizer`, `marketingskills` | Decoupled Manifest (`project_manifest.json`), 4 RAG Memory Domains, Deterministic 2-page A4 PDF rendering, strict NDA compliance, 360° Profile Synchronization |
-| [**`04_Template_AI_Safety_Evals`**](./04_Template_AI_Safety_Evals) | Python Evals, Prompt Injection Testing, OWASP MASVS | `filesystem/search`, `evaluation-tools`, `github` | `red-teaming-guardrails`, `security-and-hardening`, `truthfulness-evaluator` | Red-teaming batteries, 5 RAG Memory Domains, jailbreak probing, anti-hallucination auditing, granular Firestore & Cloud Rules hardening |
+| [**`01_Template_Mobile_Flutter`**](./01_Template_Mobile_Flutter) | Flutter 3.5+, Riverpod 3.x, Android API 34–37, Firebase | `flutter`, `firebase`, `google_maps_platform`, `github` | `pocock-safety`, `ponytail`, `karpathy-discipline` | Decoupled Manifest (`project_manifest.json`), 5 RAG Memory Domains, Reactive 360° Loop, Clean Architecture |
+| [**`02_Template_Web_Fullstack`**](./02_Template_Web_Fullstack) | Next.js, React 19, TypeScript, Astro, Vercel Serverless | `chrome-devtools`, `github` | `chrome-devtools`, `gsap-motion`, `modern-web-guidance`, `react-best-practices`, `taste-skill`, `typescript-safety`, `ui-ux-pro-max` | Author-Grade UI/UX, 5 RAG Memory Domains, Core Web Vitals (LCP < 2s, INP < 200ms), WCAG AA a11y, Strict TS API Contracts |
+| [**`03_Template_Career_HR`**](./03_Template_Career_HR) | Playwright Headless PDF, ATS Parser, Python, LinkedIn Sync | `chrome-devtools`, `github` | `anthropic-skills`, `cv-ats-optimizer`, `humanizer`, `marketingskills` | Decoupled Manifest (`project_manifest.json`), 4 RAG Memory Domains, Deterministic 2-page A4 PDF rendering, strict NDA compliance, 360° Profile Synchronization |
+| [**`04_Template_AI_Safety_Evals`**](./04_Template_AI_Safety_Evals) | Python Evals, Prompt Injection Testing, OWASP MASVS | `huggingface`, `github`, `firebase` | `red-teaming-guardrails`, `security-and-hardening`, `truthfulness-evaluator` | Red-teaming batteries, 5 RAG Memory Domains, jailbreak probing, anti-hallucination auditing, granular Firestore & Cloud Rules hardening |
+
+---
+
+## 🔒 Enterprise MCP Protocol & Security Governance
+
+Every blueprint in this repository incorporates native **Model Context Protocol (MCP)** server definitions (`.agents/mcp_config.json`) and a dedicated security governance specification (`.agents/MCP_SECURITY.md`) establishing enterprise-grade zero-trust operational boundaries:
+
+### 🛡️ Core Governance Invariants & Privilege Isolation
+
+1. **Strict Privilege Isolation & Least Privilege Standard:**
+   * **AI Safety & Auditing (`04_Template_AI_Safety_Evals`):** Strict **Read-Only** enforcement. Read access for models/datasets via Hugging Face Hub MCP and repository audits via GitHub MCP (`repo:read`). Explicit prohibition of write/mutation operations on Firestore or Cloud Storage buckets without human authorization.
+   * **Web Fullstack & Cloud (`02_Template_Web_Fullstack`):** **Localhost Sandbox**. Chrome DevTools MCP restricted strictly to local inspection (`http://localhost:*`, `http://127.0.0.1:*`) and authorized staging targets. Zero external traffic injection during automated Core Web Vitals profiling (LCP, INP, CLS) or accessibility audits.
+   * **Career & Document Strategy (`03_Template_Career_HR`):** **RGPD & PII Shielding**. Local closed-loop headless rendering via DevTools/Playwright with zero telemetry leakage. Strict isolation prohibiting exfiltration of candidate PII, private career metrics, or unreleased project data.
+   * **Mobile Engineering (`01_Template_Mobile_Flutter`):** Isolated tooling connectors (`flutter`, `firebase`, `google_maps_platform`, `github`) operating with minimal local execution scopes and fine-grained permissions.
+
+2. **Zero-Secrets Enforcement & Dynamic Interpolation:**
+   * Strict prohibition against hardcoding API keys, personal access tokens, or committing `.env` files.
+   * All MCP configurations adhere strictly to dynamic environment variable interpolation:
+     * GitHub PAT: `${GITHUB_PERSONAL_ACCESS_TOKEN}`
+     * Hugging Face Hub: `${HF_TOKEN}`
+     * Firebase Cloud: `${FIREBASE_MCP_CREDENTIALS}` or local OAuth CLI session (`firebase login`).
+
+3. **Mandatory 90-Day Credential Rotation & SEC-IRP:**
+   * Formal Incident Response Protocol (SEC-IRP): immediate revocation in identity provider consoles, local forensic secret scans, git history purification, and automated recording in `.agents/memory/01_vulnerabilities_registry.md`.
 
 ---
 
@@ -79,6 +103,8 @@ agentic-ai-hub/
 │   │   ├── skills/                    # karpathy-discipline, pocock-safety, ponytail
 │   │   ├── AGENTS.md                  # Mobile Flutter agent instructions & constraints
 │   │   ├── error_learned.md           # Learned mitigations & forensic anti-patterns
+│   │   ├── mcp_config.json            # Deterministic RFC-compliant MCP connectors
+│   │   ├── MCP_SECURITY.md            # Security protocol, least-privilege & 90-day credential rotation
 │   │   └── project_manifest.json      # Decoupled project contract & commands
 │   └── README.md                      # Architecture deep dive & Flutter QA blueprint
 │
@@ -87,6 +113,8 @@ agentic-ai-hub/
 │   │   ├── memory/                    # 5 RAG Memory Domains (CWV, UI/UX, TS Contracts, SEO, CI/CD)
 │   │   ├── skills/                    # 7 physical skills (React best practices, GSAP, DevTools...)
 │   │   ├── AGENTS.md                  # Fullstack Web agent rules & Web Vitals directives
+│   │   ├── mcp_config.json            # Deterministic RFC-compliant MCP connectors
+│   │   ├── MCP_SECURITY.md            # Security protocol, localhost sandbox & 90-day rotation
 │   │   └── project_manifest.json      # Web build & verification contract
 │   └── README.md                      # Next.js/React & Serverless guidelines
 │
@@ -96,6 +124,8 @@ agentic-ai-hub/
 │   │   ├── skills/                    # anthropic-skills, cv-ats-optimizer, humanizer, marketingskills
 │   │   ├── AGENTS.md                  # Tech recruiter & career strategy agent instructions
 │   │   ├── error_learned.md           # ATS & PDF formatting learnings
+│   │   ├── mcp_config.json            # Deterministic RFC-compliant MCP connectors
+│   │   ├── MCP_SECURITY.md            # Security protocol, RGPD/PII shielding & credential rotation
 │   │   └── project_manifest.json      # Career ecosystem manifest
 │   └── README.md                      # Headless Playwright PDF & ATS optimization manual
 │
@@ -104,6 +134,8 @@ agentic-ai-hub/
 │   │   ├── memory/                    # 5 RAG Memory Domains (Vulns, Mitigations, LLM Benchmarks...)
 │   │   ├── skills/                    # red-teaming-guardrails, security-and-hardening, truthfulness-evaluator
 │   │   ├── AGENTS.md                  # AI safety, red teaming & security audit directives
+│   │   ├── mcp_config.json            # Deterministic RFC-compliant MCP connectors
+│   │   ├── MCP_SECURITY.md            # Security protocol, strict read-only audit & cloud IAM boundaries
 │   │   └── project_manifest.json      # Safety evals runner contract
 │   └── README.md                      # Guardrail evaluation & MASVS compliance guide
 │

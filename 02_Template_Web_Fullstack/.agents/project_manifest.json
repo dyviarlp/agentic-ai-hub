@@ -31,5 +31,13 @@
     "lcp_target_ms": 2000,
     "inp_target_ms": 200,
     "cls_target": 0.1
+  },
+  "mcp_servers": {
+    "required": [
+      "chrome-devtools",
+      "github"
+    ],
+    "config_file": ".agents/mcp_config.json",
+    "security_protocol": ".agents/MCP_SECURITY.md"
   }
 }

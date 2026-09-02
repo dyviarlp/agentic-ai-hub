@@ -21,5 +21,13 @@
     "zero_confidentiality_leakage": true,
     "zero_touch_external_projects": true,
     "max_rag_domain_files_per_session": 3
+  },
+  "mcp_servers": {
+    "required": [
+      "chrome-devtools",
+      "github"
+    ],
+    "config_file": ".agents/mcp_config.json",
+    "security_protocol": ".agents/MCP_SECURITY.md"
   }
 }

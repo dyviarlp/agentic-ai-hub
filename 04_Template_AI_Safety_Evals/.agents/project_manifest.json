@@ -33,5 +33,14 @@
     "mandatory_legal_disclaimers": [
       "Ley 7/2023"
     ]
+  },
+  "mcp_servers": {
+    "required": [
+      "huggingface",
+      "github",
+      "firebase"
+    ],
+    "config_file": ".agents/mcp_config.json",
+    "security_protocol": ".agents/MCP_SECURITY.md"
   }
 }
