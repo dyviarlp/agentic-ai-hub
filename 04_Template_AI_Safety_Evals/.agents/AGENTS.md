@@ -26,8 +26,8 @@
 
 ## 3. Router RAG Jerárquico de Memoria (.agents/memory/)
 
-1. **Enrutamiento Bajo Demanda:** Cargar un máximo de **1 a 3 dominios** según el objeto auditado:  
-   - `vulnerabilities_registry` (`01`), `mitigations_playbook` (`02`), `llm_evals_benchmarks` (`03`), `cloud_rules_hardening` (`04`), `masvs_mobile_security` (`05`).
+1. **Enrutamiento Bajo Demanda & Anti-Overfetching:** Cargar un máximo de **1 a 3 dominios** de `project_manifest.json`. Prohibido el escaneo ciego de archivos no indexados.
+   - `vulnerabilities_registry` (`01`), `mitigations_playbook` (`02`), `llm_evals_benchmarks` (`03`), `cloud_rules_hardening` (`04`), `masvs_mobile_security` (`05`), `audit_reports_index` (`06`).
 2. **Registro Modular de Vulnerabilidades:** Todo hallazgo debe registrarse de inmediato en `01_vulnerabilities_registry.md` (ID, severidad, superficie, vector y estado) vinculando su mitigación en `02_mitigations_playbook.md`.
 3. **Session-Scope & Anti-Stale Guard:** Cargar las fichas necesarias al inicio; verificar encabezado `> Última validación: YYYY-MM-DD` antes de aplicar contramedidas previas.
 

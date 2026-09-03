@@ -34,8 +34,8 @@
 
 ## 3. Router RAG Jerárquico de Memoria (.agents/memory/)
 
-1. **Enrutamiento Bajo Demanda:** Clasificar la tarea en un máximo de **1 a 3 dominios** definidos en `project_manifest.json`:  
-   - `core_web_vitals` (`01`), `ui_ux_design_system` (`02`), `typescript_api_contracts` (`03`), `seo_meta_a11y` (`04`), `deployment_vercel` (`05`).
+1. **Enrutamiento Bajo Demanda & Anti-Overfetching:** Clasificar la tarea en un máximo de **1 a 3 dominios** de `project_manifest.json`. Prohibido el barrido ciego de componentes `.tsx` para buscar contenidos o servicios.
+   - `core_web_vitals` (`01`), `ui_ux_design_system` (`02`), `typescript_api_contracts` (`03`), `seo_meta_a11y` (`04`), `deployment_vercel` (`05`), `web_services_catalog` (`06`).
 2. **Session-Scope:** Cargar las fichas necesarias al inicio; prohibido re-leer la misma ficha en micro-acciones intermedias.
 3. **Anti-Stale Guard:** Comprobar el encabezado `> Última validación: YYYY-MM-DD` antes de aplicar soluciones históricas.
 

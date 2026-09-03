@@ -1,14 +1,16 @@
-﻿# Matriz Maestra de Aprendizaje de Errores (.agents/error_learned.md)
+# Matriz Maestra de Aprendizaje de Errores (.agents/error_learned.md)
 
-> **Gobernanza del Agente:** Sistema de Memoria Modular Particionada (RAG JerÃ¡rquico).  
-> **Directriz de Consulta:** Antes de refactorizar un mÃ³dulo, consulta la regla preventiva en la matriz y accede a la ficha temÃ¡tica correspondiente en `.agents/memory/`.
+> **Gobernanza del Agente:** Sistema de Memoria Modular Particionada (RAG Jerárquico) para Flutter Mobile.  
+> **Directriz de Consulta:** Antes de modificar modelos, screens o providers de Riverpod, consulta la regla preventiva y accede a la ficha temática en `.agents/memory/`.
 
 ---
 
-## âš¡ Matriz de Consulta RÃ¡pida por Dominios
+## ⚡ Matriz de Consulta Rápida por Dominios
 
-| ID | Dominio | SÃ­ntoma / Riesgo Clave | Regla Preventiva Inmutable | Ficha Detallada |
+| ID | Dominio | Síntoma / Riesgo Clave | Regla Preventiva Inmutable | Ficha Detallada |
 | :--- | :--- | :--- | :--- | :---: |
-| **MEM-01** | Core & State | Fuga de memoria en streams de Notifiers | Registrar formalmente `ref.onDispose(() => sub.cancel())`. | [03_state_providers.md](memory/03_state_providers.md) |
-| **MEM-02** | Storage | Fuga de memoria o crash por archivos temporales grandes | Usar siempre `putData(bytes)` en flujos de memoria en lugar de rutas fÃ­sicas. | [04_data_storage.md](memory/04_data_storage.md) |
-| **MEM-03** | UI & Layout | RenderFlex overflow en teclados o fuentes grandes | Layouts scrollables seguros con `SingleChildScrollView` y envolver en `SafeArea`. | [02_ui_components.md](memory/02_ui_components.md) |
+| **MEM-01** | Anti-Overfetching | Barrido indiscriminado de widgets Dart para buscar textos de la app o features | Enrutar directamente a `app_features_catalog` (`06_app_features_catalog.md`). Cero escaneo ciego de `lib/`. | [06_app_features_catalog.md](memory/06_app_features_catalog.md) |
+| **MEM-02** | Core Logic | Desbordamiento de nulos en runtime o excepciones `NullPointerException` | Clases de dominio 100% inmutables (`@immutable`), constructores `const` y colecciones nulas mapeadas a `const []`. | [01_core_logic.md](memory/01_core_logic.md) |
+| **MEM-03** | UI Resilience | Excepciones `RenderFlex overflowed by X pixels` en pantallas de pantalla pequeña | Uso de `LayoutBuilder`, `SingleChildScrollView` y tipografía adaptable con `MediaQuery`. | [02_ui_components.md](memory/02_ui_components.md) |
+| **MEM-04** | State Leaks | Re-renderizados masivos de árbol de widgets o fugas de listeners en Riverpod | Suscripciones quirúrgicas mediante `ref.watch(provider.select(...))` y disposición limpia de controladores. | [03_state_providers.md](memory/03_state_providers.md) |
+| **MEM-05** | Obfuscation | Compilación de release sin ofuscación de código expuesta a ingeniería inversa | Compilación obligatoria con `--obfuscate --split-debug-info` según OWASP MASVS v2.0. | [05_governance_evidence.md](memory/05_governance_evidence.md) |

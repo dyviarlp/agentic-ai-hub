@@ -14,12 +14,14 @@
     "ui_components": ".agents/memory/02_ui_components.md",
     "state_providers": ".agents/memory/03_state_providers.md",
     "data_storage": ".agents/memory/04_data_storage.md",
-    "governance_evidence": ".agents/memory/05_governance_evidence.md"
+    "governance_evidence": ".agents/memory/05_governance_evidence.md",
+    "app_features_catalog": ".agents/memory/06_app_features_catalog.md"
   },
   "invariants": {
     "zero_warnings": true,
     "dynamic_test_discovery": true,
-    "max_rag_domain_files_per_session": 3
+    "max_rag_domain_files_per_session": 3,
+    "anti_overfetching": true
   },
   "mcp_servers": {
     "required": [

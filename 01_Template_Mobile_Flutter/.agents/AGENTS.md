@@ -34,7 +34,7 @@
 
 ## 3. Router RAG JerÃ¡rquico de Memoria (.agents/memory/)
 
-1. **Enrutamiento Bajo Demanda:** Al inicio de cada tarea, clasificar la intenciÃ³n en un mÃ¡ximo de **1 a 3 dominios** definidos en `project_manifest.json` y cargar Ãºnicamente sus fichas correspondientes.
+1. **Enrutamiento Bajo Demanda & Anti-Overfetching:** Clasificar la intención en un máximo de **1 a 3 dominios** de `project_manifest.json`. Prohibido el escaneo ciego de archivos Dart en `lib/` para buscar contenidos o features.
 2. **Session-Scope:** Las fichas se leen al inicio de la sesiÃ³n/tarea y se mantienen en contexto de trabajo; **prohibido re-leer la misma ficha en micro-acciones intermedias**.
 3. **Anti-Stale Guard:** Verificar el encabezado `> Ãšltima validaciÃ³n: YYYY-MM-DD` en cada ficha antes de confiar en una soluciÃ³n histÃ³rica.
 4. **Consulta RÃ¡pida de Matriz:** En `.agents/error_learned.md` reside el Ã­ndice sintÃ©tico de 1 lÃ­nea por error.

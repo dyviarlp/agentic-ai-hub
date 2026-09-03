@@ -35,7 +35,7 @@
 
 ## 3. Router RAG Jerárquico de Memoria (.agents/memory/)
 
-1. **Enrutamiento Bajo Demanda:** Al iniciar cada tarea, clasificar la intención en un máximo de **1 a 3 dominios** definidos en `project_manifest.json` y cargar únicamente sus fichas correspondientes.
+1. **Enrutamiento Bajo Demanda & Anti-Overfetching:** Clasificar la intención en un máximo de **1 a 3 dominios** de `project_manifest.json`. Prohibido el escaneo ciego de archivos no indexados o PDFs binarios; resolver exclusivamente vía dominios.
 2. **Session-Scope:** Las fichas se leen al inicio de la sesión y se mantienen en memoria de trabajo; prohibido re-leer la misma ficha en micro-acciones intermedias.
 3. **Anti-Stale Guard:** Verificar el encabezado `> Última validación: YYYY-MM-DD` en cada ficha antes de asumir una solución histórica.
 4. **Consulta Rápida de Matriz:** En `.agents/error_learned.md` reside el índice sintético de prevención de errores.

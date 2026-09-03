@@ -10,6 +10,9 @@
     "build_release": "python Scripts_Generadores/build_cv.py && python Scripts_Generadores/build_cv_ats.py"
   },
   "domains": {
+    "candidate_strategy": "CONTEXTO_ESTRATEGIA_IA.md",
+    "cv_content": ".agents/memory/00_cv_content_blueprint.md",
+    "interview_strategy": "CHULETA_LLAMADAS_ENTREVISTAS.md",
     "ats_optimization": ".agents/memory/01_ats_optimization.md",
     "playwright_engine": ".agents/memory/02_playwright_engine.md",
     "confidentiality_governance": ".agents/memory/03_confidentiality_governance.md",
@@ -20,7 +23,8 @@
     "zero_overflow": true,
     "zero_confidentiality_leakage": true,
     "zero_touch_external_projects": true,
-    "max_rag_domain_files_per_session": 3
+    "max_rag_domain_files_per_session": 3,
+    "anti_overfetching": true
   },
   "mcp_servers": {
     "required": [

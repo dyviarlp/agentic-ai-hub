@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Architecture](https://img.shields.io/badge/Architecture-Deterministic_Loop_Engineering_v2.0-orange.svg)](#-deterministic-loop-engineering-framework)
 [![Ecosystem Audit](https://img.shields.io/badge/Ecosystem_Audit-100%25_Enterprise_Gold-brightgreen.svg)](#-enterprise-gold-audit-certification-100100)
-[![RAG Memory](https://img.shields.io/badge/RAG_Memory-48_Domains_Active-blue.svg)](#-curated-modular-domain-blueprints)
+[![RAG Memory](https://img.shields.io/badge/RAG_Memory-Anti_Overfetching_v2.0-blue.svg)](#-curated-modular-domain-blueprints)
 [![Physical Skills](https://img.shields.io/badge/Executable_Skills-17_Physical_Skills-8A2BE2.svg)](#-curated-modular-domain-blueprints)
 [![MCP Protocol](https://img.shields.io/badge/MCP-Model_Context_Protocol_Ready-blueviolet.svg)](#-enterprise-mcp-protocol--security-governance)
 [![Safety & Compliance](https://img.shields.io/badge/Security-OWASP_MASVS_%26_Zero_Secrets-red.svg)](#-privacy-zero-leakage--safety-guarantee)
@@ -64,7 +64,7 @@ This repository hosts 4 specialized, sanitized, privacy-clean agent templates re
 | :--- | :--- | :--- | :--- | :--- |
 | [**`01_Template_Mobile_Flutter`**](./01_Template_Mobile_Flutter) | Flutter 3.5+, Riverpod 3.x, Android API 34–37, Firebase | `flutter`, `firebase`, `google_maps_platform`, `github` | `pocock-safety`, `ponytail`, `karpathy-discipline` | Decoupled Manifest (`project_manifest.json`), 5 RAG Memory Domains, Reactive 360° Loop, Clean Architecture |
 | [**`02_Template_Web_Fullstack`**](./02_Template_Web_Fullstack) | Next.js, React 19, TypeScript, Astro, Vercel Serverless | `chrome-devtools`, `github` | `chrome-devtools`, `gsap-motion`, `modern-web-guidance`, `react-best-practices`, `taste-skill`, `typescript-safety`, `ui-ux-pro-max` | Author-Grade UI/UX, 5 RAG Memory Domains, Core Web Vitals (LCP < 2s, INP < 200ms), WCAG AA a11y, Strict TS API Contracts |
-| [**`03_Template_Career_HR`**](./03_Template_Career_HR) | Playwright Headless PDF, ATS Parser, Python, LinkedIn Sync | `chrome-devtools`, `github` | `anthropic-skills`, `cv-ats-optimizer`, `humanizer`, `marketingskills` | Decoupled Manifest (`project_manifest.json`), 4 RAG Memory Domains, Deterministic 2-page A4 PDF rendering, strict NDA compliance, 360° Profile Synchronization |
+| [**`03_Template_Career_HR`**](./03_Template_Career_HR) | Playwright Headless PDF, ATS Parser, Python, LinkedIn Sync | `chrome-devtools`, `github` | `anthropic-skills`, `cv-ats-optimizer`, `humanizer`, `marketingskills` | Decoupled Manifest (`project_manifest.json`), 7 RAG Memory Domains (SSOT Pure Markdown CV), Anti-Overfetching Router, Deterministic 2-page A4 PDF rendering, strict NDA compliance, 360° Profile Synchronization |
 | [**`04_Template_AI_Safety_Evals`**](./04_Template_AI_Safety_Evals) | Python Evals, Prompt Injection Testing, OWASP MASVS | `huggingface`, `github`, `firebase` | `red-teaming-guardrails`, `security-and-hardening`, `truthfulness-evaluator` | Red-teaming batteries, 5 RAG Memory Domains, jailbreak probing, anti-hallucination auditing, granular Firestore & Cloud Rules hardening |
 
 ---

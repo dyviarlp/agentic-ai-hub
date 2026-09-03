@@ -23,7 +23,8 @@
     "mitigations_playbook": ".agents/memory/02_mitigations_playbook.md",
     "llm_evals_benchmarks": ".agents/memory/03_llm_evals_benchmarks.md",
     "cloud_rules_hardening": ".agents/memory/04_cloud_rules_hardening.md",
-    "masvs_mobile_security": ".agents/memory/05_masvs_mobile_security.md"
+    "masvs_mobile_security": ".agents/memory/05_masvs_mobile_security.md",
+    "audit_reports_index": ".agents/memory/06_audit_reports_index.md"
   },
   "invariants": {
     "safety_score_target": 95,
@@ -32,7 +33,8 @@
     "max_rag_domain_files_per_session": 3,
     "mandatory_legal_disclaimers": [
       "Ley 7/2023"
-    ]
+    ],
+    "anti_overfetching": true
   },
   "mcp_servers": {
     "required": [
